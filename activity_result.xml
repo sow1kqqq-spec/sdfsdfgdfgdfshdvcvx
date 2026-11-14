@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#0E1114" android:fitsSystemWindows="true" android:padding="16dp">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+        <LinearLayout android:id="@+id/banner" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical"
+            android:background="@drawable/bg_banner_ok" android:padding="20dp">
+
+            <TextView android:id="@+id/verdict" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="ДОСТУП РАЗРЕШЁН" android:textSize="22sp" android:textStyle="bold" />
+
+            <TextView android:id="@+id/reason" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="4dp"
+                android:textColor="#7D8B96" android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="@drawable/bg_card"
+            android:padding="14dp" android:layout_marginTop="12dp">
+
+            <TextView android:id="@+id/label" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:textColor="#E6EDF3" android:textStyle="bold" android:textSize="16sp" />
+
+            <TextView android:id="@+id/uid" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="6dp"
+                android:textColor="#22D3EE" android:typeface="monospace" android:textSize="18sp" />
+
+            <TextView android:id="@+id/balance" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="6dp"
+                android:textColor="#7D8B96" android:textSize="12sp" />
+
+            <TextView android:id="@+id/time" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="4dp"
+                android:textColor="#7D8B96" android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:text="ВЫВОД ПРИЛОЖЕНИЯ (JSON)"
+            android:textColor="#7D8B96" android:textSize="11sp" />
+
+        <TextView android:id="@+id/payload" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="6dp"
+            android:background="#0B0F12" android:padding="12dp" android:textColor="#9FE8F5"
+            android:textSize="11sp" android:typeface="monospace" android:textIsSelectable="true" />
+
+        <Button android:id="@+id/btnConfirm" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="16dp"
+            android:text="Подтвердить проход" android:backgroundTint="#22D3EE" android:textColor="#04222A" />
+        <Button android:id="@+id/btnCharge" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Списать произвольно"
+            android:backgroundTint="#161B20" android:textColor="#E6EDF3" />
+        <Button android:id="@+id/btnCopy" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Скопировать JSON"
+            android:backgroundTint="#161B20" android:textColor="#E6EDF3" />
+        <Button android:id="@+id/btnClose" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Закрыть"
+            android:backgroundTint="#161B20" android:textColor="#E6EDF3" />
+    </LinearLayout>
+</ScrollView>
