@@ -14,7 +14,8 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
-      - uses: android-actions/setup-android@v3
+      # SDK is preinstalled on the runner; AGP downloads platform 34 once licenses are accepted
+      - run: yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: 8.7
